@@ -1,0 +1,26 @@
+### GET ALL RECORD
+GET http://localhost:4000/api/Records Http/1.1
+
+### Get Single record
+GET http://localhost:4000/api/Records/61586f29e69d401bd81059bb HTTP1.1
+
+### Create Record
+POST http://localhost:4000/api/Records Http/1.1
+Content-Type: application/json
+
+{
+    "token":"myTOken",
+    "s3Url":"myS3Url"
+}
+
+### Update Record
+PUT http://localhost:4000/api/Records/6159a18be522b6b9078a4638 Http/1.1
+Content-Type: application/json
+
+{
+    "token":"myTOken",
+    "s3Url":"new url"
+}
+
+### Delete Record
+Delete http://localhost:4000/api/Records/6159a18be522b6b9078a4638 Http/1.1
